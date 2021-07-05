@@ -22,7 +22,7 @@ body{
 }
 
 .content{
-    background-color: rgba(255, 255, 255, 0.849);
+    background-color: rgba(255, 255, 255, 0.781);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,14 +31,12 @@ body{
     border-radius: 10px;
     border: solid 1px rgb(189, 186, 186);
     box-shadow: 0px 10px 14px 10px #3534356e;
-
     margin: auto 10px;
-    padding: 1.5rem 0;
 }
 
 .text-container{
     text-align: center;
-    padding:  2rem 2rem 0 2rem;
+    padding:  0.5rem 2rem 0 2rem;
     display: flex;
 }
 
@@ -51,35 +49,85 @@ body{
     font-size: xx-large;
     font-weight: 300;
     margin: 0.2rem 0 1rem 0;
+    font-style: italic;
 }
-.quote-icon{
-    float: left;
-    margin: -2.8rem 0 0 0;
 
-}
+
 
 .buttons{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 0 1rem 0;
     
 }
 
-.buttons>div{
+button{
     border-radius: 10px;
-    background-color: black;
+    background-color: #333;
     color: white;
     padding: 0.3rem 1.4rem;
     align-items: center;
+    cursor: pointer;
+    border:none;
+    height: 2.5rem;
+    box-shadow: 0 0.3rem rgba(139, 139, 139, 0.65);
     
 }
 
+button:hover{
+    filter: brightness(110%);
+}
+
+button:active{
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.twitter-button:hover{
+    color: #38a1f3;
+
+}
+.bxl-twitter{
+    font-size: 25px;
+}
 .new-quote{
     display: flex;
     font-size: 1.2rem;
     align-items: center;
-    height: 35px;
 }
 .buttons-container{
     width: 90%;
+}
+
+/* Media Query */
+
+@media screen and (min-width:767px){
+    .quote{
+        font-size: 2.8rem;
+    }
+    .text-container{
+        padding:  0.5rem 2.5rem 0 2.5rem;
+    }
+}
+@media screen and (min-width:1023px){
+    .text-container{
+        padding:  0.5rem 1.5rem 0 1.5rem;
+    }
+    .content{
+        margin: auto 5%;
+    }
+}
+
+@media screen and (min-width:1439px){
+    
+    .content{
+        margin: auto 15%;
+    }
+}
+@media screen and (min-width:2559px){
+    
+    .content{
+        margin: auto 25%;
+    }
 }
