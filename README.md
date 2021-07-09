@@ -13,7 +13,7 @@ _This Project was built with:_
 ## Versions 📌
 
 
-For all available versions, see the [tags in this repository](https://github.com/jcarreazo/Landing_Page_Responsive/tags).
+For all available versions, see the [tags in this repository](https://github.com/jcarreazo/Quote-Generator/tags).
 
 ## Autor ✒️
 
